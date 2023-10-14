@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>PWA Test page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
+    <h1>Tracker </h1>
+    <form>
+        <Fieldset>
+            <Legend>Enter your start and stop date:</Legend>
+            <p>
+                <label for="start-date">Start date</label>
+                <input type="date" id="start-date" required />
+            </p>
+            <p>
+                <label for="end-date">end-date</label>
+                <input type="date" id="end-date" required />
+            </p>
+        </Fieldset>
+        <p>
+            <button type="submit">Add Range</button>
+        </p>
+    </form>
+    <section id="past-ranges"></section>
+    <script src="app.js" defer></script>
 </body>
+
 </html>
